@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="Automation.Listeners"/>
+  </listeners>
+  <test name="Validating pagesNavigation(failed)" parallel="none">
+    <classes>
+      <class name="Automation.MHomePage">
+        <methods>
+          <include name="pagesNavigation"/>
+        </methods>
+      </class> <!-- Automation.MHomePage -->
+      <class name="Automation.validateRadionCheckbox">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Automation.validateRadionCheckbox -->
+    </classes>
+  </test> <!-- Validating pagesNavigation(failed) -->
+  <test name="Validating RadionCheckbox(failed)" parallel="none">
+    <classes>
+      <class name="Automation.validateRadionCheckbox">
+        <methods>
+          <include name="validateRadiobutton"/>
+          <include name="validateTravelDropDown"/>
+          <include name="validateCheckBox"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Automation.validateRadionCheckbox -->
+    </classes>
+  </test> <!-- Validating RadionCheckbox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
